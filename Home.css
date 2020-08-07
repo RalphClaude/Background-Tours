@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.OK {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.OK-2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.OK-3 {
+     font-family: 'Oleo Script Swash Caps', cursive;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 65px;
+    letter-spacing: 15px;
+    padding: 25px;
+}
+
+.OK-3:hover {
+    transition: all 0.2s linear;
+    color: red;
+}
+
+
+.dots {
+    text-align: center;
+    letter-spacing: 100px;
+    font-size: 100px;
+}
+
+
+.header{
+    background:url("faceshot.jpg") no-repeat fixed ;
+    background-size: 1400px ;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 70px;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding: 150px;
+}
+
+/* Prices */
+
+.Freepic {
+    color: white;
+    background:url("./images/KashyT.jpg") no-repeat fixed ;
+    background-size: 100% 100% ;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 120px;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    font-family:'Oleo Script Swash Caps', cursive;
+    padding: 50px;
+}
+
+.Prices-head {
+    font-family:'Oleo Script Swash Caps', cursive;
+    color: white;
+    font-size: 40px;
+}
+
+.Prices-dots {
+    font-size: 30px;
+    letter-spacing: 30px;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.btn {
+color: white;
+text-transform: uppercase;
+text-align: center;
+font-size: 29px;
+border: 3px white solid;
+ display: inline-flex; 
+ padding: 5px;
+transition: all 0.5s linear;
+letter-spacing: 8px;
+text-decoration: none;
+   
+}
+
+.btn:hover {
+    transition: all 0.5s linear;
+    color: gray;
+    border:  2px grey solid;
+}
+
+/* content-border */
+
+.content-border {
+    width: 100%;
+    height: 15px;
+    background-size: 100%;
+    background: linear-gradient( to left, red, black,red);
+    transition: all 1.0s;
+}
+
+
+.content-border:hover {
+    background: linear-gradient( to left, black, red,black);
+}
+
+/* about */
+
+.about-header {
+    color: white;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+    font-size: 45px;
+}
+
+.about-pic {
+    float: left;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    border-color: linear-gradient(red,aqua);
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+
+.keed-pic {
+    height: 500px;
+    width: 500px;
+    float: left;
+    padding: 10px;
+    border: red 10px solid;
+}
+
+.keed-pic:hover {
+    border:  rgb(66, 65, 65) 10px solid;
+    transition: all 1s linear;
+}
+
+
+.about-text {
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+   min-width: 40px;
+   height: 400px;
+}
+
+
+/* Middle/gallery */
+
+.gallery-img-container {
+  position: relative;
+  background: linear-gradient(red, black);
+ 
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%,-50%);
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.gallery-img {
+  transition: all 0.5s linear;
+  width: 400px; 
+  height: 400px;
+  
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.4;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+
+.gallery-img {
+  height: 20rem;
+  width: 337.25px;
+  object-fit: cover;
+ transition: all 0.3s linear;
+}
+
+
+@media screen and (min-width: 100px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+
+@media screen and (min-width: 300px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+
+  .gallery-img {
+  height: 20rem;
+  width: 337.25px;
+  object-fit: cover;
+ transition: all 0.3s linear;
+}
+}
+
+@media screen and (min-width: 1420px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+
+  .gallery-img {
+  height: 20rem;
+  width: 337.25px;
+  object-fit: cover;
+ transition: all 0.3s linear;
+}
+}
+
+@media screen and (min-width: 1820px) {
+  .gallery-center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+
+  .gallery-img {
+  height: 20rem;
+  width: 315.25px;
+  object-fit: cover;
+ transition: all 0.3s linear;
+}
+}
+
+
+
+
+@media screen and (min-width: 400px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+
+/* Booking */
+
+.contact {
+    background:;
+}
+
+.contact-form,
+.contact-info {
+    margin: 3rem 0;
+}
+
+.contact-form {
+    width: 100%;
+     
+}
+
+.contact-form-text {
+    color: white;
+    font-size: 60px;
+    font-family:  'Oleo Script Swash Caps', cursive;
+}
+
+.contact-item {
+    margin-bottom: 1.75rem;
+     
+}
+
+.contact-title {
+    font-family:  'Oleo Script Swash Caps', cursive;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: 400px;
+    font-size: 35px;
+    
+}
+.contact-text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form {
+    
+    background: red;
+    border-radius: 00.25rem;
+    text-align: center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s linear;
+    max-width: 35rem;
+}
+
+.contact-form:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form h3 {
+    padding-top: 1.2;
+    color:white;
+}
+
+.form-group {
+    padding: 1rem 1.5rem;
+    
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background: red;
+    border-radius: 00.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: white;
+}
+
+.form-control:hover {
+    border: white 2px solid;
+}
+
+.form-control::placeholder {
+    font-family: var(--ff-primary);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.submit-btn {
+    padding-right: 400px;
+    display: block;
+    width: 100%;
+    color: white;
+    background: linear-gradient(red,black);
+    padding: 1rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+@media screen and (min-width:992px) {
+    .contact-form,
+    .contact-info {
+        float: left;
+        width: 650px;
+    }
+}
+
+
+
+/* footer */
+
+
+.foot {
+  text-align: center;
+  width: 100%;
+}
+.footer-icon {
+    color: white;
+     text-decoration: none;
+}
+
+.footer-icon:hover {
+    transition: all 0.2s linear;
+    color: red;
+    text-decoration: none;
+}
+
+.footer-1 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 25px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.footer-2 {
+    color: white;
+   padding-bottom: 25px;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.footer-3 {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    letter-spacing: 30px;
+}
+
+.footer-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    letter-spacing: 5px;
+    font-size: 22px;
+    color: white;
+}
